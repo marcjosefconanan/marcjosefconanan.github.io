@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="secondarystylesheet.css"/>
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="main.js" defer></script>
+        <title>Marc josef conanan</title>
+    </head>
+    <div id="overlay"></div>
+    <div id="mobile-menu" class="mobile-main-menu">
+      <ul>
+        <li><a href="resumepage.html">Resume (cv)</a></li>
+        <li><a href="certificatepage.html">certificates</a></li>
+        <li><a href="#">codes</a></li>
+        </li>
+      </ul>
+    </div>
+    <header class="main-header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/MJC_logo1.png" alt="Mc logo" />
+        </a>
+      </div>
+      <nav class="desktop-main-menu">
+        <ul>
+          <li><a href="portfoliopage.html">Portfolio</a></li>
+          <li><a href="aboutpage.html">About</a></li>
+          <li><a href="contactpage.html">Contact</a></li>
+        </ul>
+        </nav>
+            </header>
+            <!-- Hamburger Menu -->
+            <button id="menu-btn" class="hamburger" type="button">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+            </button>
+              <!-- Mountain Section  -->
+            <section-a class="mountan section animate__animated animate__fadeIn">
+            <img src="img/stars.png" id="stars">
+            <img src="img/moon.png" id="moon">
+            <img src="img/mountains_behind.png" id="mountains_behind">
+            <h2 id="text">THE MOUNTAINS</h2>
+            <a href="#explore" id="btn1">Explore</a>
+            <img src="img/mountains_front.png" id="mountains_front">
+            </section-a>
+
+            <!-- Section a -->
+            <section class="section-animate section-a">
+                <div class="section-inner-1" id="explore">
+                  <div class="section-img">
+                    <img src="img/ablessing.png" alt="section-imges">
+                  </div>
+                  <h2>A blessing in disguise</h2>
+                  <h4><br>The mountains always evoke a sense of serenity and calm for me,
+                    from the crisp air to the deep connection with nature. However, 
+                    after a trekking accident that resulted in a broken leg, my perspective on mountains changed. They now symbolize change for me -
+                    from the varying scenery depending on the season, to the transformation in my own life. The accident gave me time to reflect on what I truly wanted to do with my life and that's when I discovered my passion for coding and web development. 
+                    I had briefly learned about it in high school but never truly appreciated it until I had the opportunity to explore it on my own. The sense of accomplishment from creating something from scratch was exhilarating and I fell in love with it.
+                    My goal now, as an aspiring web developer, is to continue to improve and grow. Thank you for taking the time to view my work, which is a of my self-study and experimentation.
+                  </h4>
+                  </div>
+              </section>
+            <!-- Section b -->
+            <section class="section-animate section-b">
+              <div class="section-inner-2">
+                <div class="section-img">
+                  <img src="img/prisonmike.png" alt="section-imges">
+                </div>
+                <h2>A quote for inspiration</h2>
+                    <h4><br>This quote is from the character Michael Scott, portrayed by actor Steve Carell in the TV series "The Office," this qoute might be perceived as silly by fans of the show, but I find it to be a profound statement. As an avid basketball enthusiast, I am aware of the significance of shooting percentage, which measures the likelihood of a player making a shot. Some players are so concerned about maintaining a high shooting percentage that they avoid taking shots altogether. In my view, this quote underscores the idea that if you spend too much time weighing the risks of a decision, you may miss out on valuable opportunities. To put it differently, if you don't take risks, you'll always come up short.
+                  </h4>
+              </div>
+            </section>
+            <!-- Section c -->
+                <section class="section-animate section-c">
+                    <div class="section-inner-1">
+                      <div class="section-img">
+                        <img src="img/murakami.png" alt="section-imges">
+                      </div>
+                      <h2>final remarks</h2>
+                      <h4><br>"I hope you have enjoyed browsing through my website and that it has given you a glimpse of my skills and abilities as a web developer.
+                        Additionally, I hope that you have gotten a sense of who I am as a person and what I can offer to your company.
+                        As a final thank you for your time spent here, I would like to share one of my all-time favorite quotes from a book that I highly recommend.
+                        This quote has been a source of inspiration for me throughout my journey and I hope it will inspire or help you in some way.
+                        The quote is: "And once the storm is over, you won't remember how you made it through, how you managed to survive. You won't even be sure, whether the storm is really over.
+                        But one thing is certain. When you come out of the storm, you won't be the same person who walked in.---Kafka on the Shore
+                        Novel by Haruki Murakami
+                        " </h4>
+                    </div>
+                  </section>
+              <footer>
+                <ul>
+                  <li>MC &copy; 2022</li>
+                  <li><a href="https://www.instagram.com/marcjosef06/">Instagram</a></li>
+                  <li><a href="https://www.linkedin.com/in/marc-josef-conanan-6a5ba6254/">LinkedIn</a></li>
+                  <li><a href="https://github.com/marcjosefconanan">Github</a></li>
+                </ul>
+              </footer>
+            <script>
+                let stars = document.getElementById('stars');
+                let moon = document.getElementById('moon');
+                let mountains_behind = document.getElementById('mountains_behind');
+                let mountains_front = document.getElementById('mountains_front');
+                let text = document.getElementById('text');
+                let btn1 = document.getElementById('btn1');
+
+
+                window.addEventListener('scroll',function(){
+                    let value = window.scrollY;
+                    stars.style.left = value * 0.25 + 'px';
+                    moon.style.top = value * 1.05 + 'px';
+                    mountains_behind.style.top = value * 0.5 + 'px';
+                    mountains_front.style.top = value * 0 + 'px';
+                    text.style.marginRight = value * 4 + 'px';
+                    text.style.marginTop = value * 1.0 + 'px';
+                    btn1.style.marginTop = value * 1.5 + 'px';
+                })
+            </script>
+  
+        </body>
+</html>
